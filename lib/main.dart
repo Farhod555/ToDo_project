@@ -5,10 +5,12 @@ import 'package:todo_project/empty/item_icon/pages/personal_page.dart';
 import 'package:todo_project/empty/main_view.dart';
 import 'package:todo_project/onBoarding/onBoarding_page.dart';
 
+import 'box/box.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  await Hive.openBox('box');
+  box= await Hive.openBox('box');
   runApp(const MyApp());
 }
 
@@ -28,7 +30,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/MainView' : (context) => const MainView(),
         '/PersonalPage' : (context) => const PersonalPage(),
-
       },
     );
   }

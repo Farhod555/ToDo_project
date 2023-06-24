@@ -35,7 +35,7 @@ class _TaskPageState extends State<TaskPage> {
                       ],
                     ),
                     CircleAvatar(
-                       backgroundColor: Colors.white,
+                      backgroundColor: Colors.white,
                       radius: 30  ,
                     )
                   ],
@@ -96,8 +96,8 @@ class _TaskPageState extends State<TaskPage> {
 }
 
 class TaskWidget extends StatelessWidget {
-   TaskWidget(this.imageBack,this.imageFront, this.taskName, this.taskNumber,{Key? key}) : super(key: key);
-String imageFront,imageBack, taskName, taskNumber;
+  TaskWidget(this.imageBack,this.imageFront, this.taskName, this.taskNumber,{Key? key}) : super(key: key);
+  String imageFront,imageBack, taskName, taskNumber;
   @override
   Widget build(BuildContext context) {
     return InkWell(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_project/box/box.dart';
 import 'empty_page.dart';
 import 'item_icon/task_page.dart';
 
@@ -270,7 +271,7 @@ class _MainViewState extends State<MainView> {
                             Positioned(
                               child: MaterialButton(
                                 onPressed: () {
-                                  tasks.add(tasksCtr.text);
+                                  box!.add(tasksCtr.text);
                                   Navigator.pop(context);
                                   setState1(() {});
                                 },
